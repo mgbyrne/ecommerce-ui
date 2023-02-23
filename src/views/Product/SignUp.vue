@@ -103,8 +103,7 @@ export default {
                     },
                 })
 
-                    // await axios
-                    //   .post(`${this.baseURL}/user/signup`, user)
+        
                     .then(() => {
                         // redirect to home page
                         this.$router.replace("/");
