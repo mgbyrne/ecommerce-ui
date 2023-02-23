@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AddCategory from '../views/Category/AddCategory'
 import MyCategory from '../views/Category/MyCategory'
+import SignUp from '../views/Product/SignUp.vue'
+import SignIn from '../views/Product/SignIn.vue'
 
 
 const routes = [
@@ -27,7 +29,17 @@ component: AddCategory
     path: '/admin/mycategory',
     name: 'MyCategory',
     component: MyCategory
-      }
+      },
+      {
+        path: '/signup',
+        name: 'SignUp',
+        component: SignUp
+      },
+      {
+        path: '/signin',
+        name: 'SignIn',
+        component: SignIn
+      },
 ]
 
 const router = createRouter({
